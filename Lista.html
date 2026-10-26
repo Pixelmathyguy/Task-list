@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="Lista.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="nav-container">
+        <div id="nav-logo">
+          <h2 id="nav-logo-text">TODO APP</h2>
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <form id="todo-form">
+        <div id="todo-form-inputs-container">
+          <input
+            class="todo-form-input"
+            type="text"
+            id="todo-form-input"
+            placeholder="Create some task..."
+          />
+          <p class="todo-form-help-text" id="todo-error-text">
+            A task must be provided.
+          </p>
+        </div>
+        <div id="todo-form-btn-container">
+          <button type="submit" id="todo-form-submit-btn">+</button>
+        </div>
+      </form>
+      <ul id="todo-list">
+        <li class="todo-list-item">
+          <button class="todo-item-delete-btn" title="Eliminar">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="todo-item-text-container">
+            <p class="todo-item-text">Welcome to the todo app!</p>
+          </div>
+          <button class="todo-item-check-btn" title="Completar">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </button>
+        </li>
+        <li class="todo-list-item">
+          <button class="todo-item-delete-btn" title="Eliminar">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="todo-item-text-container">
+            <p class="todo-item-text">Esto es una lista de tareas</p>
+          </div>
+          <button class="todo-item-check-btn" title="Completar">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </button>
+        </li>
+        <li class="todo-list-item">
+          <button class="todo-item-delete-btn" title="Eliminar">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="todo-item-text-container">
+            <p class="todo-item-text">Tiene contadores</p>
+          </div>
+          <button class="todo-item-check-btn" title="Completar">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </button>
+        </li>
+      </ul>
+      <div id="todo-counters">
+        <span class="counter-badge counter-total">Total: 3</span>
+        <span class="counter-badge counter-completed">Completed: 0</span>
+        <span class="counter-badge counter-incompleted">Incompleted: 3</span>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
