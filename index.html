@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app-wrapper">
+      <h1 id="app-title">TODO APP</h1>
+
+      <main id="todo-card">
+        <!-- Formulario de entrada -->
+        <form id="todo-form">
+          <div id="input-container">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Create some task..."
+              autocomplete="off"
+            />
+            <button type="submit" id="add-btn" title="Agregar tarea">+</button>
+          </div>
+          <p id="error-message">A task must be provided.</p>
+        </form>
+
+        <!-- Lista de tareas -->
+        <ul id="todo-list">
+          <!-- Tarea completada de ejemplo (según indicación 3) -->
+          <li class="todo-item completed">
+            <button class="delete-btn">✕</button>
+            <span class="todo-text">Welcome to the todo app!</span>
+            <button class="check-btn">✓</button>
+          </li>
+          <li class="todo-item">
+            <button class="delete-btn">✕</button>
+            <span class="todo-text">Esto es una lista de tareas</span>
+            <button class="check-btn">✓</button>
+          </li>
+          <li class="todo-item">
+            <button class="delete-btn">✕</button>
+            <span class="todo-text">Tiene contadores</span>
+            <button class="check-btn">✓</button>
+          </li>
+        </ul>
+
+        <!-- Contadores -->
+        <div id="counters-container">
+          <span class="counter-badge counter-total" id="counter-total">Total: 3</span>
+          <span class="counter-badge counter-completed" id="counter-completed">Completed: 1</span>
+          <span class="counter-badge counter-incompleted" id="counter-incompleted">Incompleted: 2</span>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
