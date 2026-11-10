@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "text": "NO tengo contadores",
+      "completed": true,
+      "id": "3"
+    },
+    {
+      "text": "Hacer la comida",
+      "completed": false,
+      "id": "aaTS5-JsOMM"
+    },
+    {
+      "text": "Ir a comprar la comida",
+      "completed": false,
+      "id": "jjO7-YAXhYo"
+    },
+    {
+      "text": "Jugar apex con el papu DEaaaaaaa",
+      "completed": false,
+      "id": "hlWjhqoPo4o"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
